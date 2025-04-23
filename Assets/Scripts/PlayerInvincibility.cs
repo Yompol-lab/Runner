@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerInvincibility : MonoBehaviour
 {
@@ -9,18 +9,13 @@ public class PlayerInvincibility : MonoBehaviour
 
     void Start()
     {
-
-        Debug.Log($"[Player] Layer actual del jugador: {gameObject.layer} ({LayerMask.LayerToName(gameObject.layer)})");
-
         obstacleLayer = LayerMask.NameToLayer(obstacleLayerName);
+        Debug.Log($"[DEBUG] Player está en capa {gameObject.layer} ({LayerMask.LayerToName(gameObject.layer)})");
+        Debug.Log($"[DEBUG] Capa obstáculo '{obstacleLayerName}' es {obstacleLayer}");
 
         if (obstacleLayer == -1)
         {
-            Debug.LogError($"[Invincibility]  La capa '{obstacleLayerName}' no existe. Creala en Tags and Layers.");
-        }
-        else
-        {
-            Debug.Log($"[Invincibility]  Capa '{obstacleLayerName}' encontrada como Layer {obstacleLayer}.");
+            Debug.LogError("La capa de obstáculo no existe.");
         }
     }
 
@@ -46,11 +41,12 @@ public class PlayerInvincibility : MonoBehaviour
     {
         if (obstacleLayer == -1)
         {
-            Debug.LogWarning(" No se puede cambiar colisi�n porque la capa es inv�lida.");
+            Debug.LogWarning("No se puede cambiar colisión porque la capa es inválida.");
             return;
         }
 
         isInvincible = value;
-        Physics2D.IgnoreLayerCollision(gameObject.layer, obstacleLayer, value);
+        Physics.IgnoreLayerCollision(gameObject.layer, obstacleLayer, value);
+        Debug.Log($"[Invincibility] IGNORAR colisión Player({gameObject.layer}) ↔ Obstaculo({obstacleLayer}) = {value}");
     }
 }
