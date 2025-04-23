@@ -15,11 +15,9 @@ public class Obstacle : MonoBehaviour
         if (collision.gameObject.name == "Player") 
         {
             playerMovement.Die();
-        }
-    }
 
-    void Update()
-    {
+        }
         
     }
+  
 }

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4408091514921686228}
   - component: {fileID: 8929015540753140766}
   - component: {fileID: -8783063442653590133}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obtacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 244645109674306276}
   - component: {fileID: 3824712313622962719}
   - component: {fileID: 8033071085425070038}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Car1Wheel-RR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -196,7 +196,7 @@ GameObject:
   - component: {fileID: 6654618026321721224}
   - component: {fileID: 8677083003955906875}
   - component: {fileID: 5371552478900360491}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Car1Wheel-RL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -282,7 +282,7 @@ GameObject:
   - component: {fileID: 2031118591842756476}
   - component: {fileID: 6077151584418875387}
   - component: {fileID: 1760230425167043848}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Car1Wheel-FR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -368,7 +368,7 @@ GameObject:
   - component: {fileID: 9198974179109475766}
   - component: {fileID: 6103852872132607482}
   - component: {fileID: 5276093687115628021}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Car1Wheel-FL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -454,7 +454,7 @@ GameObject:
   - component: {fileID: 4856139723111149909}
   - component: {fileID: 7644237548040902251}
   - component: {fileID: 7881396337581285974}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Car1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
